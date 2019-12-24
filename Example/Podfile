@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHSuperNetwork_Example' do
+  pod 'AHSuperNetwork', :path => '../'
+
+  target 'AHSuperNetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
