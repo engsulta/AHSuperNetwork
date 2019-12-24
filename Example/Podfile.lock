@@ -1,0 +1,16 @@
+PODS:
+  - AHSuperNetwork (0.1.0)
+
+DEPENDENCIES:
+  - AHSuperNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  AHSuperNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AHSuperNetwork: 383324f2fa3527c80885b3e0be829b09f255e0f7
+
+PODFILE CHECKSUM: c0c1e44299e5820b8b574d5f594140a8b881d83b
+
+COCOAPODS: 1.8.4

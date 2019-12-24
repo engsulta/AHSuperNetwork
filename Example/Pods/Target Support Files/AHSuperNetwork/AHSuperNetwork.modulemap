@@ -1,0 +1,6 @@
+framework module AHSuperNetwork {
+  umbrella header "AHSuperNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
