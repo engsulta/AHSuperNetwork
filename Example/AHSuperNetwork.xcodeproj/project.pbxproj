@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* AHSuperNetwork_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHSuperNetwork_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6CDE571F30233F05457A779A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6CDE571F30233F05457A779A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AC930A1DA1412DDD257D4086 /* Pods-AHSuperNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHSuperNetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-AHSuperNetwork_Example/Pods-AHSuperNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B24B1097AA0BD3659523251B /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHSuperNetwork.podspec; path = ../AHSuperNetwork.podspec; sourceTree = "<group>"; };
+		B24B1097AA0BD3659523251B /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHSuperNetwork.podspec; path = ../AHSuperNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4ABB2412B5964443EF2A63F /* Pods_AHSuperNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3068D9CE80DA07BF2B92C9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C3068D9CE80DA07BF2B92C9C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D53FF62EBE12A450C75692B2 /* Pods-AHSuperNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHSuperNetwork_Tests.release.xcconfig"; path = "Target Support Files/Pods-AHSuperNetwork_Tests/Pods-AHSuperNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F59066DF93BAF55BA1BCB86F /* Pods_AHSuperNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				357E5D534B8EDCBF30A119E9 /* Pods-AHSuperNetwork_Tests.debug.xcconfig */,
 				D53FF62EBE12A450C75692B2 /* Pods-AHSuperNetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

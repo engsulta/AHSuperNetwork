@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		14C717F848C3DED1146C93948347D955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		31D8633E1766589FD72BB35D59C47762 /* Pods-AHSuperNetwork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDD8444637F86E3E21D9FE689004019 /* Pods-AHSuperNetwork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35964B9923B2C42400EA7DEB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8723B2C42300EA7DEB /* ParameterEncoding.swift */; };
+		35964B9A23B2C42400EA7DEB /* AuthTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8923B2C42300EA7DEB /* AuthTokenProvider.swift */; };
+		35964B9B23B2C42400EA7DEB /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8A23B2C42300EA7DEB /* NetworkLogger.swift */; };
+		35964B9C23B2C42400EA7DEB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8B23B2C42300EA7DEB /* NetworkError.swift */; };
+		35964B9D23B2C42400EA7DEB /* AHNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8C23B2C42300EA7DEB /* AHNetworkLayer.swift */; };
+		35964B9E23B2C42400EA7DEB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8E23B2C42300EA7DEB /* Constants.swift */; };
+		35964B9F23B2C42400EA7DEB /* HTTPURLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B8F23B2C42300EA7DEB /* HTTPURLResponseExtension.swift */; };
+		35964BA023B2C42400EA7DEB /* URLComponents+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9023B2C42300EA7DEB /* URLComponents+Encoding.swift */; };
+		35964BA123B2C42400EA7DEB /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9123B2C42300EA7DEB /* URLSessionExtensions.swift */; };
+		35964BA223B2C42400EA7DEB /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9323B2C42300EA7DEB /* NetworkClient.swift */; };
+		35964BA323B2C42400EA7DEB /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9423B2C42300EA7DEB /* NetworkClientProtocol.swift */; };
+		35964BA423B2C42400EA7DEB /* NetworkClientDefaultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9523B2C42300EA7DEB /* NetworkClientDefaultExtensions.swift */; };
+		35964BA523B2C42400EA7DEB /* NetworkProgressDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9623B2C42300EA7DEB /* NetworkProgressDelegate.swift */; };
+		35964BA623B2C42400EA7DEB /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35964B9823B2C42300EA7DEB /* RequestProtocol.swift */; };
 		3CB157D0F1DD8F6C60B338CD27F26857 /* AHSuperNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2B5C707E856FB453F94F1B5145EE95 /* AHSuperNetwork-dummy.m */; };
 		53230ADE6051598E7ACC74162FE48A5A /* AHSuperNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B23FE82AE1F7FEA88A0C8BDB51C4E2E7 /* AHSuperNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		619CB9B21C56238C848704F84A9082FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6CB451587A9A5A9F4094BC1A3312B779 /* Pods-AHSuperNetwork_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B449FCB9CCE7E0573E80C6EE0A814839 /* Pods-AHSuperNetwork_Tests-dummy.m */; };
 		A71936D5AE4DCE6DC9C5CA0CB73A1424 /* Pods-AHSuperNetwork_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EB79CAB35B37DA21BD9455C4BA2306 /* Pods-AHSuperNetwork_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0838662683F466664345572F33B4FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C178425B9A4E7AEF99EE4CF2FAEA33DD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F067B34F17C94F2984B5E627DB0FCCF3 /* ReplaceMe.swift */; };
 		C336AF1F0124E8BA2A1AE31A92D78322 /* Pods-AHSuperNetwork_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E08CA7C95FE1F07959D44CC799D68D /* Pods-AHSuperNetwork_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +55,24 @@
 		1F57791DC0E545E6F3D13242B0306823 /* AHSuperNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHSuperNetwork.xcconfig; sourceTree = "<group>"; };
 		20EB79CAB35B37DA21BD9455C4BA2306 /* Pods-AHSuperNetwork_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHSuperNetwork_Example-umbrella.h"; sourceTree = "<group>"; };
 		2CDD8444637F86E3E21D9FE689004019 /* Pods-AHSuperNetwork_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHSuperNetwork_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2F42125F3325A5BDC2321787914A736A /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AHSuperNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2F42125F3325A5BDC2321787914A736A /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AHSuperNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30917A132813B3FC38EEAE28892C358A /* Pods-AHSuperNetwork_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHSuperNetwork_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33A24FF8B13DB010057F374680E37967 /* Pods_AHSuperNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHSuperNetwork_Example.framework; path = "Pods-AHSuperNetwork_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A24FF8B13DB010057F374680E37967 /* Pods_AHSuperNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35964B8723B2C42300EA7DEB /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		35964B8923B2C42300EA7DEB /* AuthTokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenProvider.swift; sourceTree = "<group>"; };
+		35964B8A23B2C42300EA7DEB /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		35964B8B23B2C42300EA7DEB /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		35964B8C23B2C42300EA7DEB /* AHNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHNetworkLayer.swift; sourceTree = "<group>"; };
+		35964B8E23B2C42300EA7DEB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		35964B8F23B2C42300EA7DEB /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
+		35964B9023B2C42300EA7DEB /* URLComponents+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+Encoding.swift"; sourceTree = "<group>"; };
+		35964B9123B2C42300EA7DEB /* URLSessionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
+		35964B9323B2C42300EA7DEB /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		35964B9423B2C42300EA7DEB /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		35964B9523B2C42300EA7DEB /* NetworkClientDefaultExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientDefaultExtensions.swift; sourceTree = "<group>"; };
+		35964B9623B2C42300EA7DEB /* NetworkProgressDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProgressDelegate.swift; sourceTree = "<group>"; };
+		35964B9823B2C42300EA7DEB /* RequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		3A804BFCC773241E3AE665D98350E03F /* Pods-AHSuperNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHSuperNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3B0936EE1E86A74D8A9827DBA4AF58 /* Pods-AHSuperNetwork_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHSuperNetwork_Tests-Info.plist"; sourceTree = "<group>"; };
 		617C970CC24B32A206399601FF2744B6 /* Pods-AHSuperNetwork_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AHSuperNetwork_Tests.modulemap"; sourceTree = "<group>"; };
@@ -57,17 +84,16 @@
 		7AAACC4B5A9EF4A88978A237A6697219 /* Pods-AHSuperNetwork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHSuperNetwork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		83C5580BDADE048DAEF71691E6E6D08F /* Pods-AHSuperNetwork_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHSuperNetwork_Example-Info.plist"; sourceTree = "<group>"; };
 		8AD7FB46AFA6882C1E7C4E0B8191F0D0 /* AHSuperNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHSuperNetwork-prefix.pch"; sourceTree = "<group>"; };
-		90583999A40B3EEA2AC19AF261EDDC62 /* Pods_AHSuperNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHSuperNetwork_Tests.framework; path = "Pods-AHSuperNetwork_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90583999A40B3EEA2AC19AF261EDDC62 /* Pods_AHSuperNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930BD4186DC31C146ED9D7595F44A51E /* AHSuperNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHSuperNetwork.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A787922363F12B38AA037AD6544DB710 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A8AC9C0BFA946C29DA2998ADA634FD65 /* AHSuperNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHSuperNetwork.framework; path = AHSuperNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABDDEF4A717B0D17B5959655C5F2E5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A787922363F12B38AA037AD6544DB710 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8AC9C0BFA946C29DA2998ADA634FD65 /* AHSuperNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHSuperNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDDEF4A717B0D17B5959655C5F2E5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B23FE82AE1F7FEA88A0C8BDB51C4E2E7 /* AHSuperNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHSuperNetwork-umbrella.h"; sourceTree = "<group>"; };
 		B449FCB9CCE7E0573E80C6EE0A814839 /* Pods-AHSuperNetwork_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHSuperNetwork_Tests-dummy.m"; sourceTree = "<group>"; };
 		BB71CC4FBF5CC629DF2B0CF87CCB6C58 /* AHSuperNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AHSuperNetwork-Info.plist"; sourceTree = "<group>"; };
 		CD15E3A3A16F378658EB81EB3E89E49D /* Pods-AHSuperNetwork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHSuperNetwork_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F067B34F17C94F2984B5E627DB0FCCF3 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AHSuperNetwork/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		F1FD5FAD50BAB3482358998208A079BB /* Pods-AHSuperNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHSuperNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,10 +158,72 @@
 			path = "Target Support Files/Pods-AHSuperNetwork_Tests";
 			sourceTree = "<group>";
 		};
+		35964B8523B2C42300EA7DEB /* AHNetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				35964B8623B2C42300EA7DEB /* AHEncoding */,
+				35964B8823B2C42300EA7DEB /* AHNetworkService */,
+				35964B8C23B2C42300EA7DEB /* AHNetworkLayer.swift */,
+				35964B8D23B2C42300EA7DEB /* Extensions */,
+				35964B9223B2C42300EA7DEB /* AHNetwokClient */,
+			);
+			name = AHNetworkLayer;
+			path = AHSuperNetwork/Classes/AHNetworkLayer;
+			sourceTree = "<group>";
+		};
+		35964B8623B2C42300EA7DEB /* AHEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				35964B8723B2C42300EA7DEB /* ParameterEncoding.swift */,
+			);
+			path = AHEncoding;
+			sourceTree = "<group>";
+		};
+		35964B8823B2C42300EA7DEB /* AHNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				35964B8923B2C42300EA7DEB /* AuthTokenProvider.swift */,
+				35964B8A23B2C42300EA7DEB /* NetworkLogger.swift */,
+				35964B8B23B2C42300EA7DEB /* NetworkError.swift */,
+			);
+			path = AHNetworkService;
+			sourceTree = "<group>";
+		};
+		35964B8D23B2C42300EA7DEB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35964B8E23B2C42300EA7DEB /* Constants.swift */,
+				35964B8F23B2C42300EA7DEB /* HTTPURLResponseExtension.swift */,
+				35964B9023B2C42300EA7DEB /* URLComponents+Encoding.swift */,
+				35964B9123B2C42300EA7DEB /* URLSessionExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35964B9223B2C42300EA7DEB /* AHNetwokClient */ = {
+			isa = PBXGroup;
+			children = (
+				35964B9323B2C42300EA7DEB /* NetworkClient.swift */,
+				35964B9423B2C42300EA7DEB /* NetworkClientProtocol.swift */,
+				35964B9523B2C42300EA7DEB /* NetworkClientDefaultExtensions.swift */,
+				35964B9623B2C42300EA7DEB /* NetworkProgressDelegate.swift */,
+				35964B9723B2C42300EA7DEB /* EndPoint */,
+			);
+			path = AHNetwokClient;
+			sourceTree = "<group>";
+		};
+		35964B9723B2C42300EA7DEB /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				35964B9823B2C42300EA7DEB /* RequestProtocol.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
 		49C84E59CB3355330521D46D5CD79C1D /* AHSuperNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				F067B34F17C94F2984B5E627DB0FCCF3 /* ReplaceMe.swift */,
+				35964B8523B2C42300EA7DEB /* AHNetworkLayer */,
 				D304FE29D4BA42EFA39AB0FEC98C1530 /* Pod */,
 				78F6B11C9BBD480335548A78D3EEC192 /* Support Files */,
 			);
@@ -365,8 +453,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35964B9B23B2C42400EA7DEB /* NetworkLogger.swift in Sources */,
+				35964BA523B2C42400EA7DEB /* NetworkProgressDelegate.swift in Sources */,
+				35964B9A23B2C42400EA7DEB /* AuthTokenProvider.swift in Sources */,
+				35964BA023B2C42400EA7DEB /* URLComponents+Encoding.swift in Sources */,
+				35964BA423B2C42400EA7DEB /* NetworkClientDefaultExtensions.swift in Sources */,
+				35964B9923B2C42400EA7DEB /* ParameterEncoding.swift in Sources */,
+				35964B9F23B2C42400EA7DEB /* HTTPURLResponseExtension.swift in Sources */,
+				35964B9D23B2C42400EA7DEB /* AHNetworkLayer.swift in Sources */,
+				35964BA323B2C42400EA7DEB /* NetworkClientProtocol.swift in Sources */,
+				35964B9C23B2C42400EA7DEB /* NetworkError.swift in Sources */,
+				35964BA123B2C42400EA7DEB /* URLSessionExtensions.swift in Sources */,
+				35964BA623B2C42400EA7DEB /* RequestProtocol.swift in Sources */,
 				3CB157D0F1DD8F6C60B338CD27F26857 /* AHSuperNetwork-dummy.m in Sources */,
-				C178425B9A4E7AEF99EE4CF2FAEA33DD /* ReplaceMe.swift in Sources */,
+				35964B9E23B2C42400EA7DEB /* Constants.swift in Sources */,
+				35964BA223B2C42400EA7DEB /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,8 +724,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
