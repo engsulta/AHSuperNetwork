@@ -18,24 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+"AHSuperNetwork is a CocoaPods that wrap the URLSession basic network layer to be more testable, maintainable, Cancellable and also you can use it to download or updload or just to track the progress of your network task"
                        DESC
 
-  s.homepage         = 'https://github.com/engsulta/AHSuperNetworking'
+  s.homepage         = 'https://github.com/engsulta/AHSuperNetwork'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'engsulta' => 'en.ahmedsultan@gmail.com' }
-  s.source           = { :git => 'https://github.com/engsulta/AHSuperNetworking.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://www.linkedin.com/in/ahmed-hamza-700b2133/'
+  s.source           = { :git => 'https://github.com/engsulta/AHSuperNetwork.git', :tag => s.version.to_s }
+  #s.social_media_url = 'https://www.linkedin.com/in/ahmed-hamza-700b2133/'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'AHSuperNetwork/Classes/**/*'
   
-   s.resource_bundles = {
-     'AHSuperNetwork' => ['AHSuperNetwork/Assets/*.png']
-   }
-
+   #s.resource_bundles = {
+   #  'AHSuperNetwork' => ['AHSuperNetwork/Assets/*.png']
+   #}
+   swift_versions = '4.0'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'Foundation', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

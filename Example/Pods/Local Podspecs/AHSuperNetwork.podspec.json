@@ -1,9 +1,9 @@
 {
   "name": "AHSuperNetwork",
   "version": "0.1.0",
-  "summary": "A short description of AHSuperNetwork.",
+  "summary": "A convience Cocoapod Swift-based HTTP networking library for iOS",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/engsulta/AHSuperNetwork",
+  "homepage": "https://github.com/engsulta/AHSuperNetworking",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "engsulta": "en.ahmedsultan@gmail.com"
   },
   "source": {
-    "git": "https://github.com/engsulta/AHSuperNetwork.git",
+    "git": "https://github.com/engsulta/AHSuperNetworking.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://www.linkedin.com/in/ahmed-hamza-700b2133/",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "AHSuperNetwork/Classes/**/*"
+  "source_files": "AHSuperNetwork/Classes/**/*",
+  "resource_bundles": {
+    "AHSuperNetwork": [
+      "AHSuperNetwork/Assets/*.png"
+    ]
+  }
 }
