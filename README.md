@@ -37,7 +37,7 @@ AHSuperNetwork is available under the MIT license. See the LICENSE file for more
 ### 1- Import AHFoundation Module in your file
 
 ```
-import AHFoundation 
+import AHSuperNetwork 
 ```
 ### 2- Create a concrete implementation of AHRequestProtocol
 
