@@ -32,8 +32,9 @@ extension AHNetworkClient {
         // to check if local file data task or network request data task
         do {
             let currentTask: URLSessionDataTaskProtocol
-            let baseURL = URL(string: baseUrl)
-            if let baseURL = baseURL, baseURL.isFileURL {
+            let isRequestPathFile = URL(string: request.path)?.isFileURL ?? false
+            let fileURL = isRequestPathFile ? URL(string: request.path): URL(string: baseUrl)
+            if let baseURL = fileURL, baseURL.isFileURL {
                  currentTask = session.dataTask(with: baseURL, completionHandler: responseCompletionHandler)
 
             } else {
