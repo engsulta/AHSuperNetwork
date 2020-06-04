@@ -27,11 +27,13 @@ class PostsViewModel {
     // init fetch posts
     func initFetch() {
         self.isLoading = true
-        postsUseCase.fetchPosts { [weak self] (model, error) in
+         let cachedModel = postsUseCase.fetchPosts { [weak self] (model, error) in
             guard let self = self else {return}
             self.isLoading = false
             guard let posts = model as? [PostModel] else { return }
             self.posts = posts
         }
+         guard let posts = cachedModel else { return }
+         self.posts = posts
     }
 }

@@ -26,7 +26,7 @@ public protocol AHNetworkClientProtocol {
     func execute<T: Codable>(request: AHRequestProtocol,
                              model: T.Type,
                              progressClosure: AHNetworkProgressClosure?,
-                             completion: @escaping AHNetworkCompletion)
+                             completion: @escaping AHNetworkCompletion) -> T?
     func upload<T: Codable, U: Encodable>(request: AHRequestProtocol,
                                           responseModel: T.Type,
                                           uploadModel: U,

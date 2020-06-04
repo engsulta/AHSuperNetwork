@@ -11,6 +11,7 @@
 		1803C49423A61857AD438B68E393EA7E /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8C003F3DF91285048EA27FEE52D0ED /* NetworkClient.swift */; };
 		211D3CACA73D4846DDD9D33417301F96 /* AHSuperNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0A476BECC12470268BDF3A102E923B /* AHSuperNetwork-dummy.m */; };
 		31D8633E1766589FD72BB35D59C47762 /* Pods-AHSuperNetwork_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDD8444637F86E3E21D9FE689004019 /* Pods-AHSuperNetwork_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358552C32483056B00404309 /* AHCachingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358552C22483056B00404309 /* AHCachingManager.swift */; };
 		3996DA6C1C31E83A7434DB9500B5A413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3A453BE532767E3376B5551D233E4EE3 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA720E7011DBB3BA7B2F73CD9AC0066 /* NetworkLogger.swift */; };
 		619CB9B21C56238C848704F84A9082FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -59,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		03DDD72C3C2FA28442D094882E4F3C46 /* AuthTokenProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthTokenProvider.swift; sourceTree = "<group>"; };
-		1257632AEB640B1BF264075FEA3B8552 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1257632AEB640B1BF264075FEA3B8552 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		17FC47723A317F4E29B29D39AAF3DE44 /* Pods-AHSuperNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHSuperNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1A9C7B9DB9E22776489B7D5BD2F788F9 /* Pods-AHSuperNetwork_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AHSuperNetwork_Example.modulemap"; sourceTree = "<group>"; };
 		20EB79CAB35B37DA21BD9455C4BA2306 /* Pods-AHSuperNetwork_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHSuperNetwork_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -67,7 +68,8 @@
 		2CDD8444637F86E3E21D9FE689004019 /* Pods-AHSuperNetwork_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHSuperNetwork_Tests-umbrella.h"; sourceTree = "<group>"; };
 		30917A132813B3FC38EEAE28892C358A /* Pods-AHSuperNetwork_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHSuperNetwork_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33A24FF8B13DB010057F374680E37967 /* Pods_AHSuperNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHSuperNetwork_Example.framework; path = "Pods-AHSuperNetwork_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A24FF8B13DB010057F374680E37967 /* Pods_AHSuperNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		358552C22483056B00404309 /* AHCachingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHCachingManager.swift; sourceTree = "<group>"; };
 		3811B10CBB2429323799935EEA09E23C /* RequestProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		3A804BFCC773241E3AE665D98350E03F /* Pods-AHSuperNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHSuperNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3ABBABF588D103B359DACEF383FA1A3A /* NetworkError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		5C027EA8E74C3848F6AEF8F4553235DD /* NetworkProgressDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkProgressDelegate.swift; sourceTree = "<group>"; };
 		61453C916F204B17A7C34FC6FEA2BC4D /* AHSuperNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHSuperNetwork.modulemap; sourceTree = "<group>"; };
 		617C970CC24B32A206399601FF2744B6 /* Pods-AHSuperNetwork_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AHSuperNetwork_Tests.modulemap"; sourceTree = "<group>"; };
-		64997E77E49465A025DF0CB28F0CCDF2 /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AHSuperNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		64997E77E49465A025DF0CB28F0CCDF2 /* AHSuperNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AHSuperNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		66FECBC64C1DC3ADF558DE68D8EC8089 /* AHSuperNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHSuperNetwork.xcconfig; sourceTree = "<group>"; };
 		69E08CA7C95FE1F07959D44CC799D68D /* Pods-AHSuperNetwork_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHSuperNetwork_Example-dummy.m"; sourceTree = "<group>"; };
 		6A04A641C2C3B670C1991F342FD2E17B /* Pods-AHSuperNetwork_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHSuperNetwork_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -88,13 +90,13 @@
 		7AA720E7011DBB3BA7B2F73CD9AC0066 /* NetworkLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		7AAACC4B5A9EF4A88978A237A6697219 /* Pods-AHSuperNetwork_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHSuperNetwork_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		83C5580BDADE048DAEF71691E6E6D08F /* Pods-AHSuperNetwork_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHSuperNetwork_Example-Info.plist"; sourceTree = "<group>"; };
-		90583999A40B3EEA2AC19AF261EDDC62 /* Pods_AHSuperNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHSuperNetwork_Tests.framework; path = "Pods-AHSuperNetwork_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90583999A40B3EEA2AC19AF261EDDC62 /* Pods_AHSuperNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHSuperNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2D3194AEEF275E878190D51C3929B45 /* AHNetworkLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHNetworkLayer.swift; path = AHSuperNetwork/Classes/AHNetworkLayer/AHNetworkLayer.swift; sourceTree = "<group>"; };
-		A67F3AAF6CE1AF13AB6AAA0BB6D7E641 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A8AC9C0BFA946C29DA2998ADA634FD65 /* AHSuperNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHSuperNetwork.framework; path = AHSuperNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A67F3AAF6CE1AF13AB6AAA0BB6D7E641 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8AC9C0BFA946C29DA2998ADA634FD65 /* AHSuperNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHSuperNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B449FCB9CCE7E0573E80C6EE0A814839 /* Pods-AHSuperNetwork_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHSuperNetwork_Tests-dummy.m"; sourceTree = "<group>"; };
-		C961ABD994746E61C2A571627E6E8AFF /* AHSuperNetwork.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AHSuperNetwork.bundle; path = "AHSuperNetwork-AHSuperNetwork.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C961ABD994746E61C2A571627E6E8AFF /* AHSuperNetwork.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHSuperNetwork.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBFD384256A96A9D36C2D238FAE2291 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD15E3A3A16F378658EB81EB3E89E49D /* Pods-AHSuperNetwork_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHSuperNetwork_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D1083E372263E8097AFFE424BDFF278E /* HTTPURLResponseExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPURLResponseExtension.swift; sourceTree = "<group>"; };
@@ -216,7 +218,6 @@
 			children = (
 				3811B10CBB2429323799935EEA09E23C /* RequestProtocol.swift */,
 			);
-			name = EndPoint;
 			path = EndPoint;
 			sourceTree = "<group>";
 		};
@@ -272,6 +273,7 @@
 				71BF56FA53C4AF917C60088ED3B469E0 /* NetworkClientProtocol.swift */,
 				5C027EA8E74C3848F6AEF8F4553235DD /* NetworkProgressDelegate.swift */,
 				637264A2C1342A1FC7635C2B0FDBA318 /* EndPoint */,
+				358552C22483056B00404309 /* AHCachingManager.swift */,
 			);
 			name = AHNetwokClient;
 			path = AHSuperNetwork/Classes/AHNetworkLayer/AHNetwokClient;
@@ -504,6 +506,7 @@
 			files = (
 				E5DADE8F90B253FFA932C7C3A037A76B /* AHNetworkLayer.swift in Sources */,
 				211D3CACA73D4846DDD9D33417301F96 /* AHSuperNetwork-dummy.m in Sources */,
+				358552C32483056B00404309 /* AHCachingManager.swift in Sources */,
 				78D0F7D3191D9F7E1E4C0E0B3137924E /* AuthTokenProvider.swift in Sources */,
 				0B37A7AC0CD094867F8FB54879BBF31B /* Constants.swift in Sources */,
 				7BF7B7ECDA3BA12F4F5A28D2724BCC45 /* HTTPURLResponseExtension.swift in Sources */,
@@ -649,8 +652,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

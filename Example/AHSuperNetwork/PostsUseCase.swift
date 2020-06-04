@@ -17,8 +17,9 @@ struct PostModel: Codable {
 class PostsUseCase {
     var networkClient : AHNetworkClient = AHNetworkClient(baseURL: "https://jsonplaceholder.typicode.com", session: URLSession.shared)
     
-    func fetchPosts(completion: @escaping AHNetworkCompletion) {
-        let postRequest = AHRequest(path: "/posts", httpMethod: .get, httpTask: .requestParameters(bodyParameters: [:], bodyEncoding: .urlEncoding, urlParameters: ["userId":"1"]))
-        networkClient.execute(request: postRequest, model: [PostModel].self, completion: completion)
+    func fetchPosts(completion: @escaping AHNetworkCompletion) -> [PostModel]?{
+        let postRequest = AHRequest(path: "/posts", httpMethod: .get, httpTask: .requestParameters(bodyParameters: [:], bodyEncoding: .urlEncoding, urlParameters: ["userId":"1"]),cache: true)
+        let cachedResponse = networkClient.execute(request: postRequest, model: [PostModel].self,completion: completion)
+        return cachedResponse
     }
 }
